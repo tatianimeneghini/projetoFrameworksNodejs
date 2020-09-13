@@ -1,5 +1,7 @@
 <!-- _coverpage.md -->
 
+![Logo](_media/logoNode.png)
+
 > <strong>Encontre os principais frameworks de [Node.js](https://nodejs.org)</strong>.
 
 Site gerado pela documentação [Docsify](https://docsify.js.org/#/) de maneira a tornar os principais frameworks procurados em um único lugar.
@@ -8,6 +10,9 @@ Site gerado pela documentação [Docsify](https://docsify.js.org/#/) de maneira 
 - Mútiplas funções;
 - Compartilhamento de informações.
 
-<small>Desenvolvido por [Tatiani Meneghini](https://github.com/tatianimeneghini)</small>
+[Ir aos Frameworks](framework.md)
 
-[Ir aos Frameworks    ](home)
+
+<!-- background color -->
+
+![color](whitesmoke)

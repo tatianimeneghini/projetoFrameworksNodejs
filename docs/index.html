@@ -2,34 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Frameworks de Node.js</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="ncontre os principais frameworks de Node.js">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <meta name="description" content="Encontre os principais frameworks de Node.js">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+  <title>Frameworks em Node.js</title>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
 
   <style>
     .sidebar{background-color: whitesmoke;}
+    .sidebar-nav li.active>a, .sidebar-nav li.collapse>a{font-weight: 600;}
+    .sidebar>h1 img{max-width: 80px;}
+    .cover h1 span{color: #32CD32(100%);}
     .app-nav a{color:#000000;}
-    .sidebar-toggle .sidebar-toggle-button{background-color: #05CB0E(30, 90%, 45%); color:hsl(0, 0%, 100%)}
-    .cover:before{background: #8FFF94}
+    .sidebar-toggle .sidebar-toggle-button{background-color:  whitesmoke;}
+    .sidebar-toggle .sidebar-toggle-button:hover{opacity: 0.8}
+    .cover:before{background: url('/_media/background.jpg') top left;}
+    :root {
+			 --base-font-size: 14px;
+       --theme-hue: 30;
+    }
   </style>
 
 </head>
 <body>
+  <nav>
+    <a href="https://www.linkedin.com/in/tatianimeneghini/" title="github" target="_blank">Desenvolvido por <strong>Tatiani Meneghini</strong></a>
+  </nav>
   <div id="app"></div>
 
   <script>
     window.$docsify = {
-      name: "Frameworks de Node.js",
-      logo: "_media/logoNode.png",
+      name: 'Frameworks',
+      homepage: 'README.md',
+      coverpage: true,
       coverpage: 'coverpage.md',
-      home: 'framework.md'
-    }
+      content: 'framework.md',
+      loadSidebar: false,
+      autoHeader: true,
+      alias: {
+      '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      repo: 'https://github.com/tatianimeneghini/projetoFrameworksNodejs',
+      hideSidebar: false,
+      auto2top: true,
+      logo: '/_media/logoNode.png',
+      search: 'auto',
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: 'pesquisar',
+        noData: 'Não encontramos nenhum resultado com o termo :(',
+        depth: 6,
+        hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+     },
+     share: {
+            reddit: true,
+            linkedin: true,
+            facebook: true,
+            twitter: true,
+            whatsapp: true,
+            telegram: true,
+        }
+      }
   </script>
 
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://jhildenbiddle.github.io/docsify-themeable/assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/ga.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
 
 </body>
 </html>
